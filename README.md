@@ -1,9 +1,18 @@
-# Create a JavaScript Action using TypeScript
+# Comment on Pull Request
 
-This template offers an easy way to get started writing a JavaScript action with TypeScript compile time support, unit testing with Jest and using the GitHub Actions Toolkit.
+A github action to comment on the pull request that triggers this action. If a none pull_request event triggers this action, it returns without doing anything.
 
-## Getting Started
+# Usage
 
-See the walkthrough located [here](https://github.com/actions/toolkit/blob/master/docs/typescript-action.md).
+Triggered by: 
+```yml
+on: [pull_request]
+```
 
-In addition to walking your through how to create an action, it also provides strategies for versioning, releasing and referencing your actions.
+```yml
+steps:
+- uses: henrymunro/comment-on-pr-action@v1
+    with:
+    repo-token: ${{ secrets.GITHUB_TOKEN }}
+    pr-message: 🤖🚀 Message that will appear on your pull request, complete with `markdown`
+```
