@@ -12,7 +12,13 @@ async function run() {
     const context = github.context;
 
     if (!context.payload.pull_request) {
-      throw new Error("Action can only be used on PRs.");
+      console.log(
+        "The event that triggered this action was not a pull request, skipping."
+      );
+      console.log(
+        "(If this is unexpected make sure you are triggering your workflow for the pull_request event)"
+      );
+      return;
     }
 
     const { number, owner, repo } = context.issue;
