@@ -10,7 +10,7 @@ jobs:
       - name: "npm ci"
         run: npm ci
 
-      - name: "npm run build"
+      - name: "build"
         run: npm run build
 
       - name: "check for uncommitted changes"
