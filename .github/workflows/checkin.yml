@@ -7,10 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: henrymunro/comment-on-pr-action@releases/v1
+      - uses: henrymunro/comment-on-pr-action@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-message: Hey look it worked! Take 3
+          pr-message: Hey look it worked! Take 4
 
       - name: "npm ci"
         run: npm ci
