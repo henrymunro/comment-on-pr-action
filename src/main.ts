@@ -11,6 +11,8 @@ async function run() {
     );
     const context = github.context;
 
+    console.log("🔥 ➡️ HERE:", context.payload);
+
     if (!context.payload.pull_request) {
       throw new Error("Action can only be used on PRs.");
     }
