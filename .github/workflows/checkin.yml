@@ -5,7 +5,7 @@ jobs:
   check_pr:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@releases/v1
 
       - uses: henrymunro/comment-on-pr-action@v1
         with:
