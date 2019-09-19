@@ -1,4 +1,5 @@
 name: "Comment on PR"
+description: "Write a comment back to the PR that triggered the current workflow."
 inputs:
   repo-token:
     description: "Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}"
