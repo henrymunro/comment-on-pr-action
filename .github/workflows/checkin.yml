@@ -5,9 +5,9 @@ jobs:
   check_pr:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@releases/v1
+      - uses: actions/checkout@v1
 
-      - uses: henrymunro/comment-on-pr-action@v1
+      - uses: henrymunro/comment-on-pr-action@releases/v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           pr-message: Hey look it worked!
