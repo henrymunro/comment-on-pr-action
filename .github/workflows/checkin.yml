@@ -10,7 +10,7 @@ jobs:
       - uses: henrymunro/comment-on-pr-action@releases/v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-message: Hey look it worked!
+          pr-message: Hey look it worked! Take 2
 
       - name: "npm ci"
         run: npm ci
