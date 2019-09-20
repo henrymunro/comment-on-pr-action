@@ -1,4 +1,4 @@
-name: "Comment on PR"
+name: "Comment on pull request"
 description: "Write a comment back to the PR that triggered the current workflow."
 branding:
   icon: "git-pull-request"
